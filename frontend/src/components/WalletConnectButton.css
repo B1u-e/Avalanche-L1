@@ -1,0 +1,307 @@
+.custom-connect-button {
+  font-size: 14px !important;
+}
+
+.ant-web3-connect-button {
+  border-radius: 6px !important;
+  padding: 6px 16px !important;
+  font-weight: 500 !important;
+  height: auto !important;
+}
+
+/* 自定义钱包模态框样式 */
+.ant-web3-connect-modal-container .ant-modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ant-web3-connect-modal-container .ant-modal-header {
+  background-color: white;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ant-web3-connect-modal-container .ant-modal-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.ant-web3-wallet-card {
+  border-radius: 8px !important;
+  transition: all 0.3s !important;
+}
+
+.ant-web3-wallet-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 自定义地址显示样式 */
+.ant-web3-address {
+  background-color: #f5f5f5 !important;
+  border-radius: 20px !important;
+  padding: 4px 12px !important;
+}
+
+.wallet-connect-container {
+  position: relative;
+}
+
+.connect-wallet-button {
+  background-color: #1677ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.connect-wallet-button:hover {
+  background-color: #4096ff;
+}
+
+.wallet-info {
+  position: relative;
+}
+
+.wallet-address-button {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.wallet-address-button:hover {
+  background-color: #e6e6e6;
+}
+
+.wallet-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 140px;
+  overflow: hidden;
+}
+
+.wallet-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.wallet-dropdown button:hover {
+  background-color: #f5f5f5;
+}
+
+.wallet-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+}
+
+.wallet-modal {
+  background-color: white;
+  border-radius: 12px;
+  width: 380px;
+  max-width: 90%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wallet-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.wallet-modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+  line-height: 1;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wallet-modal-content {
+  padding: 24px;
+}
+
+.wallet-option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.wallet-option:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #1677ff;
+}
+
+.wallet-option:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.wallet-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+.metamask-icon {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBmaWxsPSIjRTI3NjFCIiBkPSJNMjQuNjIzIDQuMTU1TDEzLjE1OCAxMC40bDIuMTEzLTQuOTkgOS4zNTItMS4yNTV6Ii8+PHBhdGggZmlsbD0iI0UzNzYxQiIgZD0iTTcuMDY0IDQuMTU1bDExLjM2NiA2LjMxLTIuMDEzLTUuMDU1LTkuMzUzLTEuMjU1em0xNS41NjUgMTEuNjUzbC0yLjg5NyA0LjQxNSA2LjIwMSAxLjcxIDEuNzc0LTYuMDM0LTUuMDc4LS4wOXptLTIyLjMwNi4wOWwxLjc3MyA2LjAzNCA2LjIwMS0xLjcxLTIuODk2LTQuNDE1LTUuMDc4LjA5eiIvPjxwYXRoIGZpbGw9IiNFMzc1MUIiIGQ9Ik04LjI5NyAyMC4zMTNsNi4yMDEtMS43MS0uNDc1LTIuMDc3LTUuNzI2IDMuNzg3em0xNS4wOTMtMS43MWw2LjIwMSAxLjcxLS40NzUtMi4wNzctNS43MjYgMy43ODd6TTguMjk3IDIwLjMxM2wzLjcyNSA3LjUzMy0uMTYyLTQuMDY0LTMuNTYzLTMuNDd6bTE1LjA5MyAwbC0zLjU2MyAzLjQ2OS0uMTYyIDQuMDY0IDMuNzI1LTcuNTMzeiIvPjxwYXRoIGZpbGw9IiNENTY3MUIiIGQ9Ik0xMi4wMjIgMjcuODQ2bC0uMDYzLTEuMzY1LjU3NS0uNDk1aC02LjYxNGwuNTc1LjQ5NS0uMDYzIDEuMzY1TDEyLjAyMiAyNy44NDZ6bTcuNjQzIDBsNS41OSAzLjE5Ny0uMDYzLTEuMzY1LjU3NS0uNDk1aC02LjYxNGwuNTc1LjQ5NS0uMDYzIDEuMzY1eiIvPjxwYXRoIGZpbGw9IiNFQjhGMzUiIGQ9Ik0xMi4wMjIgMjcuODQ2bC0uMTYyLTEuMzY1LjI3NS0uMjI1LTEyLjEzNS0zLjU2IDMuNzI1IDMuMTVoOC4yOTd6bTcuNjQzIDBsLjE2Mi0xLjM2NS0uMjc1LS4yMjUgMTIuMTM1LTMuNTYtMy43MjUgMy4xNWgtOC4yOTd6Ii8+PHBhdGggZmlsbD0iI0MwQUMwQyIgZD0iTTEyLjAyMiAyNy44NDZsLjEyNS0yLjA3Ny0uMjc1LS4yMjVoNy45NDNsLS4yNzUuMjI1LjEyNSAyLjA3N0gxMi4wMjJ6Ii8+PHBhdGggZmlsbD0iIzE2MTYxNiIgZD0iTTE5LjY0IDE1LjcxOEwxOC4wMyAxMy4xNWgtNC4zNzNsLTEuNjEgMi41NjcuMTI1IDYuMjE1LjI3NS4yMjVoNi44MDJsLjI3NS0uMjI1LjEyNS02LjIxNXoiLz48cGF0aCBmaWxsPSIjNzYzRTFFIiBkPSJNMTkuNjQgMTUuNzE4bC0xLjYxLTIuNTY3aC00LjM3M2wtMS42MSAyLjU2NyAxLjYxLjg1NWg0LjM3M2wxLjYxLS44NTV6Ii8+PC9zdmc+');
+}
+
+.browser-wallet-icon {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJNMTYgMy4xQTEyLjkgMTIuOSAwIDAgMCAzLjEgMTZjMCA3LjEgNS44IDEyLjkgMTIuOSAxMi45IDcuMSAwIDEyLjktNS44IDEyLjktMTIuOVM3LjEgMy4xIDE2IDMuMXptMCAwIi8+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE2IDguNmMtMi4xIDAtMy45LjctNS40IDJsMS45IDMuM2MuOS0uNiAyLjEtLjkgMy41LS45IDMuMyAwIDYgMi43IDYgNnMtMi43IDYtNiA2Yy0zLjMgMC02LTIuNy02LTYgMC0uNSAwLS45LjEtMS4zaDQuOXYtNEg0LjRjLS4yIDEtLjMgMi4xLS4zIDMuMiAwIDYuNiA1LjQgMTIgMTIgMTJzMTItNS40IDEyLTEyLTUuNC0xMi4zLTEyLjEtMTIuM3ptMCAwIi8+PC9zdmc+');
+}
+
+.injected-icon {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBmaWxsPSIjRTI3NjFCIiBkPSJNMjQuNjIzIDQuMTU1TDEzLjE1OCAxMC40bDIuMTEzLTQuOTkgOS4zNTItMS4yNTV6Ii8+PHBhdGggZmlsbD0iI0UzNzYxQiIgZD0iTTcuMDY0IDQuMTU1bDExLjM2NiA2LjMxLTIuMDEzLTUuMDU1LTkuMzUzLTEuMjU1em0xNS41NjUgMTEuNjUzbC0yLjg5NyA0LjQxNSA2LjIwMSAxLjcxIDEuNzc0LTYuMDM0LTUuMDc4LS4wOXptLTIyLjMwNi4wOWwxLjc3MyA2LjAzNCA2LjIwMS0xLjcxLTIuODk2LTQuNDE1LTUuMDc4LjA5eiIvPjxwYXRoIGZpbGw9IiNFMzc1MUIiIGQ9Ik04LjI5NyAyMC4zMTNsNi4yMDEtMS43MS0uNDc1LTIuMDc3LTUuNzI2IDMuNzg3em0xNS4wOTMtMS43MWw2LjIwMSAxLjcxLS40NzUtMi4wNzctNS43MjYgMy43ODd6TTguMjk3IDIwLjMxM2wzLjcyNSA3LjUzMy0uMTYyLTQuMDY0LTMuNTYzLTMuNDd6bTE1LjA5MyAwbC0zLjU2MyAzLjQ2OS0uMTYyIDQuMDY0IDMuNzI1LTcuNTMzeiIvPjxwYXRoIGZpbGw9IiNENTY3MUIiIGQ9Ik0xMi4wMjIgMjcuODQ2bC0uMDYzLTEuMzY1LjU3NS0uNDk1aC02LjYxNGwuNTc1LjQ5NS0uMDYzIDEuMzY1TDEyLjAyMiAyNy44NDZ6bTcuNjQzIDBsNS41OSAzLjE5Ny0uMDYzLTEuMzY1LjU3NS0uNDk1aC02LjYxNGwuNTc1LjQ5NS0uMDYzIDEuMzY1eiIvPjxwYXRoIGZpbGw9IiNFQjhGMzUiIGQ9Ik0xMi4wMjIgMjcuODQ2bC0uMTYyLTEuMzY1LjI3NS0uMjI1LTEyLjEzNS0zLjU2IDMuNzI1IDMuMTVoOC4yOTd6bTcuNjQzIDBsLjE2Mi0xLjM2NS0uMjc1LS4yMjUgMTIuMTM1LTMuNTYtMy43MjUgMy4xNWgtOC4yOTd6Ii8+PHBhdGggZmlsbD0iI0MwQUMwQyIgZD0iTTEyLjAyMiAyNy44NDZsLjEyNS0yLjA3Ny0uMjc1LS4yMjVoNy45NDNsLS4yNzUuMjI1LjEyNSAyLjA3N0gxMi4wMjJ6Ii8+PHBhdGggZmlsbD0iIzE2MTYxNiIgZD0iTTE5LjY0IDE1LjcxOEwxOC4wMyAxMy4xNWgtNC4zNzNsLTEuNjEgMi41NjcuMTI1IDYuMjE1LjI3NS4yMjVoNi44MDJsLjI3NS0uMjI1LjEyNS02LjIxNXoiLz48cGF0aCBmaWxsPSIjNzYzRTFFIiBkPSJNMTkuNjQgMTUuNzE4bC0xLjYxLTIuNTY3aC00LjM3M2wtMS42MSAyLjU2NyAxLjYxLjg1NWg0LjM3M2wxLjYxLS44NTV6Ii8+PC9zdmc+');
+}
+
+.okx-icon {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI2LjY2NjcgNS4zMzMzNEgxMC42NjY3VjIxLjMzMzNIMjYuNjY2N1Y1LjMzMzM0WiIgZmlsbD0iIzAwMDAwMCIvPgo8cGF0aCBkPSJNNS4zMzMzNSAxMC42NjY3SDIxLjMzMzRWMjYuNjY2N0g1LjMzMzM1VjEwLjY2NjdaIiBmaWxsPSIjMDAwMDAwIi8+CjxwYXRoIGQ9Ik0yMS4zMzM0IDEwLjY2NjdIMTAuNjY2N1YyMS4zMzMzSDIxLjMzMzRWMTAuNjY2N1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPg==');
+}
+
+.walletconnect-icon {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuMDgzMzMgMTEuMDY2N0MxMi4wMTY3IDUuMjMzMzMgMjEuNjUgNS4yMzMzMyAyNy41ODMzIDExLjA2NjdMMjguNDE2NyAxMS44ODMzQzI4LjcgMTIuMTY2NyAyOC43IDEyLjYxNjcgMjguNDE2NyAxMi45TDI2LjA1IDE1LjIzMzNDMjUuOTE2NyAxNS4zNjY3IDI1LjY4MzMgMTUuMzY2NyAyNS41NSAxNS4yMzMzTDI0LjQxNjcgMTQuMTE2N0MxOS45NjY3IDkuNzUgMTMuNzE2NyA5Ljc1IDkuMjY2NjcgMTQuMTE2N0w4LjA1IDE1LjMxNjdDNy45MTY2NyAxNS40NSA3LjY4MzMzIDE1LjQ1IDcuNTUgMTUuMzE2N0w1LjE4MzMzIDEyLjk4MzNDNC45IDE3LjcgNC45IDExLjM1IDUuMTgzMzMgMTEuMDY2N0w2LjA4MzMzIDExLjA2NjdaTTIyLjE1IDE1LjMxNjdMMjQuNTE2NyAxNy42NUMyNC44IDE3LjkzMzMgMjQuOCAxOC4zODMzIDI0LjUxNjcgMTguNjY2N0wxOC4xNSAyNC45MTY3QzE3Ljg2NjcgMjUuMiAxNy40MTY3IDI1LjIgMTcuMTMzMyAyNC45MTY3TDEyLjYzMzMgMjAuNDVDMTIuNTY2NyAyMC4zODMzIDEyLjQ1IDIwLjM4MzMgMTIuMzgzMyAyMC40NUw3Ljg4MzMzIDI0LjkxNjdDNy42IDI1LjIgNy4xNSAyNS4yIDYuODY2NjcgMjQuOTE2N0wwLjUgMTguNjY2N0MwLjIxNjY2NyAxOC4zODMzIDAuMjE2NjY3IDE3LjkzMzMgMC41IDE3LjY1TDIuODY2NjcgMTUuMzE2N0MzLjE1IDE1LjAzMzMgMy42IDE1LjAzMzMgMy44ODMzMyAxNS4zMTY3TDguMzgzMzMgMTkuNzgzM0M4LjQ1IDIwLjg1IDguNTY2NjcgMTkuODUgOC42MzMzMyAxOS43ODMzTDEzLjEzMzMgMTUuMzE2N0MxMy40MTY3IDE1LjAzMzMgMTMuODY2NyAxNS4wMzMzIDE0LjE1IDE1LjMxNjdMMTguNjUgMTkuNzgzM0MxOC43MTY3IDE5Ljg1IDE4LjgzMzMgMTkuODUgMTguOSAxOS43ODMzTDIzLjQgMTUuMzE2N0MyMy42ODMzIDE1LjAzMzMgMjQuMTMzMyAxNS4wMzMzIDI0LjQxNjcgMTUuMzE2N0wyMi4xNSAxNS4zMTY3WiIgZmlsbD0iIzNDOTlGQyIvPgo8L3N2Zz4K');
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #1677ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@keyframes spin {
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+.wallet-error {
+  color: #ff4d4f;
+  margin-bottom: 16px;
+  padding: 10px;
+  background-color: #fff2f0;
+  border: 1px solid #ffccc7;
+  border-radius: 4px;
+}
+
+.no-wallet-message {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  text-align: center;
+  color: #666;
+}
+
+.wallet-install-hint {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #f5f8ff;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px dashed #91caff;
+}
+
+.wallet-install-hint p {
+  margin: 0 0 10px;
+  color: #666;
+}
+
+.wallet-install-link {
+  color: #1677ff;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #e6f4ff;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.wallet-install-link:hover {
+  background-color: #bae0ff;
+  text-decoration: underline;
+} 
